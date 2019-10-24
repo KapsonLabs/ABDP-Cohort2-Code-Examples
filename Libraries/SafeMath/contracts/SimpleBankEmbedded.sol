@@ -66,9 +66,6 @@ contract SimpleBankEmbedded {
     // Added so ether sent to this contract is reverted if the contract fails
     // otherwise, the sender's money is transferred to contract
     function() external payable {
-        // if (msg.value > 0) {
-        //    emit Deposit(msg.sender, msg.value);
-	    //     }
         revert();
     }
 

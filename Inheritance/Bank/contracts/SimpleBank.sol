@@ -6,18 +6,18 @@
 
 pragma solidity ^0.5.0;
 
-import "./SafeMathEmbedded.sol";
+import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
 
-contract SimpleBankEmbeddedUsing {
+contract SimpleBank {
 
-    using SafeMathEmbedded for uint;
+    using SafeMath for uint;
 
     //
     // State variables
     //
 
     /* Fill in the keyword. Hint: We want to protect our users balance from other contracts*/
-    mapping (address => uint) private balances;
+    mapping (address => uint) internal balances; //needs to be internal to be accesible to LendingBank
 
     /* Fill in the keyword. We want to create a getter function and allow contracts to be able to see if a user is enrolled.  */
     mapping (address => bool) public enrolled;
@@ -99,7 +99,7 @@ contract SimpleBankEmbeddedUsing {
           then return the balance of the user */
 
         balances[msg.sender] = balances[msg.sender].add(msg.value); //balances[msg.sender] is auto passed in as first argument
-        emit LogDepositMade(msg.sender, balances[msg.sender]);
+        emit LogDepositMade(msg.sender, msg.value);
         return balances[msg.sender];
 
     }
@@ -111,7 +111,7 @@ contract SimpleBankEmbeddedUsing {
     // Emit the appropriate event
 
     //Feedback where has the accont holders ETHER gone? Have you sent the ETHER to the account holder?
-    function withdraw(uint withdrawAmount) public payable hasFunds(withdrawAmount) returns (uint) { //Feedback why is this payable?
+    function withdraw(uint withdrawAmount) public hasFunds(withdrawAmount) returns (uint) { //Feedback why is this payable?
         /* If the sender's balance is at least the amount they want to withdraw,
            Subtract the amount from the sender's balance, and try to send that amount of ether
            to the user attempting to withdraw.
