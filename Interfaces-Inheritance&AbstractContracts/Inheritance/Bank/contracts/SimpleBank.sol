@@ -43,13 +43,13 @@ contract SimpleBank {
     // modifiers
     //
     modifier isEnrolled(){
-      require(enrolled[msg.sender] == true, "User not enrolled");
-      _;
+        require(enrolled[msg.sender] == true, "User not enrolled");
+        _;
     }
 
     modifier hasFunds(uint withdrawAmount){
-      require (balances[msg.sender] >= withdrawAmount, "User has insufficient funds");
-      _;
+        require (balances[msg.sender] >= withdrawAmount, "User has insufficient funds");
+        _;
     }
 
     //

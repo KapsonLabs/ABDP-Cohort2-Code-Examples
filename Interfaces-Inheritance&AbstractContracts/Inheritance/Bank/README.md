@@ -12,3 +12,18 @@ In fact, Solidity compiler copies the base contract bytecode into derived contra
 
 Solidity supports multiple types of inheritance, including single inheritance, multiple inheritance, multi-level inheritance and hierachiccal inheritance. Solidity copies the base contracts into the derived contract and a single contract is created with inheritance. A single address is generated that is shared between contracts in a parent- child relationship.
 
+## Multiple Inheritance and Linearization
+
+Solidity resembles Python since they both follow C3 Linearization. These rules mean that the sequence of base classes in the directive is important. Direct base contracts must be presented in the order from most base-like to most derived.
+
+After Solidity calls functions that are declared several times in separate contracts, it searches the provided bases from right to left. The search ends at the first match.
+
+```
+pragma solidity >=0.4.0 <0.7.0;
+
+contract X {}
+contract A is X {}
+contract C is A, X {}
+```
+
+The code snippet above triggers an error because C requests X to replace A, but A asks to replace X. This cannot compile.
