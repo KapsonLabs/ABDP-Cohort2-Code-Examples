@@ -110,7 +110,7 @@ contract SimpleBankEmbeddedUsing {
     /// @return The balance remaining for the user
     // Emit the appropriate event
 
-    function withdraw(uint withdrawAmount) public payable hasFunds(withdrawAmount) returns (uint) {
+    function withdraw(uint withdrawAmount) public hasFunds(withdrawAmount) returns (uint) {
         balances[msg.sender] = balances[msg.sender].sub(withdrawAmount); //balances[msg.sender] is auto passed in as first argument
         msg.sender.transfer(withdrawAmount);
         emit LogWithdrawal(msg.sender, withdrawAmount, balances[msg.sender]);
