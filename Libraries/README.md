@@ -4,6 +4,16 @@ In simple terms, a library is the reusable piece of code which is deployed once 
 
 Libraries are not meant to change state of contract, They should only be used to perform simple operations based on input and return result.
 
+## Advantages of using Libraries
+
+Solidity libraries have the following advantages/use cases
+
+### 1. Code Reusability
+Functions in a library can be used by many contracts. If you have many contracts that have some common code, then you can deploy that common code as a library.
+
+### 2. Economical Contract Deployment
+Deploying common code as library will save gas as gas depends on the size of the contract too. Using a base contract instead of a library to split the common code won’t save gas because in Solidity, inheritance works by copying code.
+
 ## DelegateCall and How it is useful for Library Implementation.
 
 Extracted from the solidity documentation, 
