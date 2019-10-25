@@ -27,3 +27,6 @@ contract C is A, X {}
 ```
 
 The code snippet above triggers an error because C requests X to replace A, but A asks to replace X. This cannot compile.
+
+### Please note,
+You need to run ```npm install openzeppelin-solidity``` to add the openzeppelin dependency.
