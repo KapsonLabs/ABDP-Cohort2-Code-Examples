@@ -18,6 +18,10 @@ Contracts in Solidity are akin to classes in object-oriented languages. They inc
 
 ## Interfaces.
 
-Interfaces are similar to abstract contracts, but cannot have any *implemented functions*, cannot inherit other *contracts or interfaces*, cannot define a *constructor*, cannot define *variables*, cannot define *structs*, cannot define *enums*. Interfaces are expressed using the interface keyword
+Interfaces are similar to abstract contracts, but cannot have any *implemented functions*, cannot inherit other *contracts or interfaces*, cannot define a *constructor*, cannot define *state variables*.
+Interfaces can define *structs*, and *enums* from version solidity version 0.5. 
+Interfaces are expressed using the interface keyword
+For more infos :
+https://solidity.readthedocs.io/en/latest/contracts.html#interfaces
 
 
