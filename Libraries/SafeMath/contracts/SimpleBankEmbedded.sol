@@ -107,13 +107,7 @@ contract SimpleBankEmbedded {
     /// @param withdrawAmount amount you want to withdraw
     /// @return The balance remaining for the user
     // Emit the appropriate event
-
-    //Feedback where has the accont holders ETHER gone? Have you sent the ETHER to the account holder?
-    function withdraw(uint withdrawAmount) public payable hasFunds(withdrawAmount) returns (uint) { //Feedback why is this payable?
-        /* If the sender's balance is at least the amount they want to withdraw,
-           Subtract the amount from the sender's balance, and try to send that amount of ether
-           to the user attempting to withdraw.
-           return the user's balance.*/
+    function withdraw(uint withdrawAmount) public hasFunds(withdrawAmount) returns (uint) {
         balances[msg.sender] = SafeMathEmbedded.sub(balances[msg.sender],withdrawAmount);
         msg.sender.transfer(withdrawAmount);
         emit LogWithdrawal(msg.sender, withdrawAmount, balances[msg.sender]);
