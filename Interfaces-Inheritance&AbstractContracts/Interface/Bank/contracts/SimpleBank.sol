@@ -26,6 +26,11 @@ contract SimpleBank is Bank {
     /* Let's make sure everyone knows who owns the bank. Use the appropriate keyword for this*/
     address public owner;
 
+    /* Added just for demosntation purposes */
+
+    Bank.testEnum myEnumVar;
+    Bank.testStruct myStructVar;
+
     //
     // Events - publicize actions to external listeners
     //
@@ -61,6 +66,13 @@ contract SimpleBank is Bank {
     constructor() public {
         /* Set the owner to the creator of this contract */
         owner = msg.sender;
+
+        // Added for demonstration purposes of the use of enums and struct in interfaces
+        // from v0.5.0 of solidity
+        myEnumVar = Bank.testEnum.TWO;
+        myStructVar.number = uint(10);
+        myStructVar.addr = address(0x0);
+
     }
 
     // Fallback function - Called if other functions don't match call or
