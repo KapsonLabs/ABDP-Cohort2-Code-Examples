@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
 import './Bank.sol';
 
-contract VulnerableBank is Bank {
+contract SafeBank is Bank {
 
     using SafeMath for uint;
 
@@ -104,7 +104,7 @@ contract VulnerableBank is Bank {
     /// @return The balance remaining for the user
     // Emit the appropriate event
     function withdraw(uint withdrawAmount) public hasFunds(withdrawAmount) returns (uint) {
-      balances[msg.sender] = balances[msg.sender].sub(withdrawAmount);
+      balances[msg.sender] = balances[msg.sender] - withdrawAmount;
       bool success;
       bytes memory data;
       (success, data) = msg.sender.call.value(balances[msg.sender])("");

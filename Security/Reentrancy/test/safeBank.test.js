@@ -9,10 +9,10 @@ with `npm install -g truffle`.
 
 */
 const { expectRevert } = require('@openzeppelin/test-helpers');
-var Bank = artifacts.require("./VulnerableBank.sol");
+var Bank = artifacts.require("./SafeBank.sol");
 var Malicious = artifacts.require("./Malicious.sol");
 
-contract('VulnerableBank', function(accounts) {
+contract('SafeBank', function(accounts) {
 
   const owner = accounts[0]
   const alice = accounts[1]
