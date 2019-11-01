@@ -4,7 +4,7 @@ interface Bank {
 
   function getBalance() external view returns (uint);
   function deposit() external payable returns (uint);
-  function withdraw(uint withdrawAmount) external;
+  function withdraw(uint withdrawAmount) external returns (uint);
   function enroll() external returns (bool);
 
 }
