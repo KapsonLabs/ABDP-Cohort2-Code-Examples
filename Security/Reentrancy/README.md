@@ -2,6 +2,13 @@
 
 A reentrancy attack can occur when you create a function that makes an external call to another untrusted contract before it resolves any effects. If the attacker can control the untrusted contract, they can make a recursive call back to the original function, repeating interactions that would have otherwise not run after the effects were resolved.
 
+## Run examples
+
+`npm install`
+
+`ganache-cli`
+
+`truffle test`
 
 ### Send, Transfer & Call
 
