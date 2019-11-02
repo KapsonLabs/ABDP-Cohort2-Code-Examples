@@ -104,7 +104,7 @@ contract SafeBank is Bank {
     /// @return The balance remaining for the user
     // Emit the appropriate event
     function withdraw(uint withdrawAmount) public hasFunds(withdrawAmount) returns (uint) {
-      balances[msg.sender] = balances[msg.sender] - withdrawAmount;
+      balances[msg.sender] = balances[msg.sender].sub(withdrawAmount);
       bool success;
       bytes memory data;
       (success, data) = msg.sender.call.value(balances[msg.sender])("");

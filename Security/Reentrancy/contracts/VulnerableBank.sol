@@ -112,7 +112,7 @@ contract VulnerableBank is Bank {
       {
           revert("withdrawal failed");
       }
-      balances[msg.sender] = balances[msg.sender] - withdrawAmount;
+      balances[msg.sender] = balances[msg.sender].sub(withdrawAmount);
       emit LogWithdrawal(msg.sender, withdrawAmount, balances[msg.sender]);
       return  balances[msg.sender];
     }
