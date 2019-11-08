@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 import "../node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "../node_modules/openzeppelin-solidity/contracts/access/Roles.sol";
 
-contract SimpleBank {
+contract SimpleBankEmergencyStop {
 
     using SafeMath for uint;
     using Roles for Roles.Role;
@@ -118,8 +118,8 @@ contract SimpleBank {
         return  balances[msg.sender];
     }
 
-    function emergencyWithdraw() public onlyInEmergency {
-        // Emergency withdraw happening here
-    }
+    // function emergencyWithdraw() public onlyInEmergency {
+    //     // Emergency withdraw happening here
+    // }
 
 }
