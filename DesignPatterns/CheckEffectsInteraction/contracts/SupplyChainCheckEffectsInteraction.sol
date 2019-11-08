@@ -113,8 +113,8 @@ contract SupplyChainAccessRestriction {
     function addItem(string memory _name, uint _price) public returns(bool){
         items[skuCount] = Item(_name, skuCount, _price, State.ForSale, msg.sender, address(0));
         skuCount = skuCount + 1;
-        return true;
         emit ForSale(skuCount);
+        return true;
     }
 
 
