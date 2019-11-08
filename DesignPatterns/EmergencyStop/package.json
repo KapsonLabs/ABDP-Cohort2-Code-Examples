@@ -1,0 +1,17 @@
+{
+  "name": "SimpleBank",
+  "version": "1.0.0",
+  "description": "A blockchain powered bank",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Allan Katongole",
+  "license": "ISC",
+  "dependencies": {
+    "openzeppelin-solidity": "2.3.0"
+  }
+}
