@@ -1,4 +1,4 @@
-# ERC(Ethereum Request for Comments) Tokens.
+# Tokens.
 
 A token within Ethereum, that is not Ether itself, is stored in a smart contract. This all began when someone wrote a smart contract to manage balances. It is literally a mapping of addresses to numbers storing the balance of each address. Yes, it really is that simple.
 mapping(address => uint256) balances;

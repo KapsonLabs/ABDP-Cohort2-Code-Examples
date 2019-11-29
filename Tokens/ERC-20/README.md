@@ -1,0 +1,6 @@
+# THE ERC-20 Standard.
+
+## Why Token STandards are required.
+
+In traditional tech, if two companies wished to have their apps talk to each other, they would have to make a custom API layer to interact between the two apps. This would be a completely custom API and would not be reusable. If the app wanted to talk to a third app, another API layer would have to be created. If there was a standard in place, no additional work would have to be put in before the apps could communicate with one another.
+There are thousands of tokens, and without token standards, it would be almost impossible to communicate with each token contract. If a wallet such as Metamask wanted to communicate with multiple tokens, it would need to create an interface for each and every token. This is unscalable. We have standards so that a wallet service can implement one standard that then allows the service to interact with thousands of tokens. It also means that your contract can easily trade with other token contracts. Here is an example of an ERC20 token interface taken from OpenZeppelin. ERC20 is a fungible token.
